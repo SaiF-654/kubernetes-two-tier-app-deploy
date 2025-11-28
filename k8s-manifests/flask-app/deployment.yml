@@ -17,14 +17,14 @@ spec:
       - name: flask
         image: saifrehman123/two-tier:v1
         env:
-         - name: MYSQL_HOST
-           value: "mysql-service.mysql-db.svc.cluster.local"
-         - name: MYSQL_PASSWORD
-           value: "admin"
-         - name: MYSQL_USER
-           value: "root"
-         - name: MYSQL_DB
-           value: "mysql"    
+        - name: MYSQL_HOST
+          value: "mysql-service.mysql-db.svc.cluster.local"
+        - name: MYSQL_USER
+          value: "root"
+        - name: MYSQL_PASSWORD
+          value: "rootpassword"
+        - name: MYSQL_DB
+          value: "messagesdb"
         ports:
         - containerPort: 5000
 
